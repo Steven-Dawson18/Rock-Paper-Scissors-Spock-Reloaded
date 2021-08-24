@@ -1,9 +1,12 @@
+let firstName = "friend";
 const containerDiv = document.getElementsByClassName('container');
 const playButton = document.getElementById('submit-name');
 const gameBoardDiv = document.getElementById('game-board');
+const userInputDiv = document.getElementById('user-input');
 
 let gameOptions = `
 <div id="game-options-page">
+    <p id="message">Please enter your name above to play game.</p>
     <p id="user-options-message">Please select a game</p>
     <button class="game-button" id="short-game">First to 3</button>
     <button class="game-button" id="medium-game">First to 5</button>
@@ -17,5 +20,18 @@ let gameOptions = `
 </div>`;
 
 playButton.addEventListener('click', function() {
-   gameBoardDiv.innerHTML = gameOptions; 
+   let userInputName = document.getElementById('fname').value;
+        firstName = userInputName;
+        if(!userInputName) {
+            document.getElementById('message').innerHTML = ('Please enter your name to play!');
+        } else {
+            gameBoardDiv.innerHTML = gameOptions; 
+            document.getElementById('message').innerHTML = ('Hey ' + firstName + ' are you ready to play? Click on either Rock, Paper, Scissors, Lizard or Spock to play');
+            userInputDiv.classList.add('hide');
+        }
 })
+
+/**
+ * This function will store the name. of the user
+ */
+

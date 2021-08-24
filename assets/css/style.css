@@ -80,6 +80,18 @@ label {
     cursor: pointer;
 }
 
+.hide {
+    display: none;
+}
+#user-options-message {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#game-options-page {
+    text-align: center;
+}
+
 /* Footer social media links */
 footer {
     height: 100px;
