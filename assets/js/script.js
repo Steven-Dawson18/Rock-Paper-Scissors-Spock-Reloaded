@@ -105,6 +105,49 @@ playButton.addEventListener('click', function() {
 userInput();
 
 /**
+ * This function determines a winner between the users choice and 
+ * the computer choice.
+ * This will inturn run the win, lose or draw functions
+ */
+
+ function game(userChoice) {
+    const computerChoice = getComputerChoice();
+    switch (userChoice + computerChoice) {
+        case 'rockscissors':
+        case 'rocklizard':
+        case 'paperrock':
+        case 'paperspock':
+        case 'scissorspaper':
+        case 'scissorslizard':
+        case 'lizardpaper':
+        case 'lizardspock':
+        case 'spockrock':
+        case 'spockscissors':
+            win(userChoice, computerChoice);
+          break;
+        case 'rockpaper':
+        case 'lizardrock':
+        case 'paperscissors':
+        case 'spockpaper':
+        case 'scissorsrock':
+        case 'lizardscissors':
+        case 'paperlizard':
+        case 'spocklizard':
+        case 'rockspock':
+        case 'scissorsspock':
+            lose(userChoice, computerChoice);
+          break;
+        case 'rockrock':
+        case 'paperpaper':
+        case 'scissorsscissors':
+        case 'lizardlizard':
+        case 'spockspock':
+            draw(userChoice, computerChoice);
+          break;
+    }
+}
+
+/**
  * This function listens for the users input of either Rock, Paper, Scissors,
  * Lizard or Spock and then plays the game function
  */
