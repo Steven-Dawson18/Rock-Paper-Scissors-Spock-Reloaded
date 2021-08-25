@@ -104,3 +104,30 @@ playButton.addEventListener('click', function() {
 
 userInput();
 
+/**
+ * This function listens for the users input of either Rock, Paper, Scissors,
+ * Lizard or Spock and then plays the game function
+ */
+
+ function userButtons() {
+    const rockDiv = document.getElementById('rock');
+    rockDiv.addEventListener('click', function() {
+        game('rock');
+    });
+    const paperDiv = document.getElementById('paper');
+    paperDiv.addEventListener('click', function() {
+        game('paper');
+    });
+    const scissorsDiv = document.getElementById('scissors');
+    scissorsDiv.addEventListener('click', function() {
+        game('scissors');
+    });
+    const lizardDiv = document.getElementById('lizard');
+    lizardDiv.addEventListener('click', function() {
+        game('lizard');
+    });
+        const spockDiv = document.getElementById('spock');
+    spockDiv.addEventListener('click', function() {
+        game('spock');
+    });
+}
