@@ -43,7 +43,7 @@ header {
     box-shadow: 0 0 10px 2px;
     margin: 0 auto;
     margin-top: 30px;
-
+    text-align: center;
 }
 
 #intro {
@@ -83,14 +83,54 @@ label {
 .hide {
     display: none;
 }
+
+#message {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
 #user-options-message {
     font-size: 2rem;
     text-align: center;
+    margin: 20px 0;
 }
 
 #game-options-page {
     text-align: center;
 }
+
+/* Rules links */
+
+#rules-div {
+    width: 100%;
+    text-align: center;
+}
+
+#rules {
+    font-size: 1.5rem;
+    width: 200px;
+    color: red;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#rules-video {
+    width: 200px;
+    color: red;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#video {
+    font-size: 1.5rem;
+    width: 200px;
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
 
 /* Footer social media links */
 footer {
