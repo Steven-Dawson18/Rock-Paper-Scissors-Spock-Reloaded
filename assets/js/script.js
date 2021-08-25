@@ -105,6 +105,18 @@ playButton.addEventListener('click', function() {
 userInput();
 
 /**
+ * This function will run if the user wins and display a message and increment the user score.
+ */
+
+ function win(userChoice, computerChoice) {
+    userScore++;
+    userScoreSpan.innerHTML = userScore;
+    computerScoreSpan.innerHTML = computerScore;
+    resultDiv.innerHTML = `${convertWord(userChoice)} beats ${convertWord(computerChoice)}. ${firstName} WINS!`;
+    checkWinner();
+}
+
+/**
  * This function determines a winner between the users choice and 
  * the computer choice.
  * This will inturn run the win, lose or draw functions
