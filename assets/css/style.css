@@ -131,7 +131,6 @@ label {
     display: inline-block;
 }
 
-
 /* Footer social media links */
 footer {
     height: 100px;
@@ -163,5 +162,20 @@ footer {
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
+    cursor: pointer;
+}
+
+/* Style choices div */
+#choices {
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+
+.choice {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.choice :hover {
     cursor: pointer;
 }
