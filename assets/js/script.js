@@ -1,9 +1,14 @@
 let firstName = "friend";
+let userScore = 0;
+let computerScore = 0;
+let winningScore = 3;
+
 const containerDiv = document.getElementsByClassName('container');
 const playButton = document.getElementById('submit-name');
 const gameBoardDiv = document.getElementById('game-board');
 const userInputDiv = document.getElementById('user-input');
-
+const userScoreSpan = document.getElementById('user-score');
+const computerScoreSpan = document.getElementById('computer-score');
 
 
 
@@ -25,6 +30,7 @@ let gameOptions = `
     <button class="game-button" id="long-game">First to 10</button>
     `;
 
+/** This variable hods the HTML for the short game */
 let shortGame = `
 <p id="action-message">Make your move!</p>
 <div id="choices">
@@ -65,8 +71,6 @@ let shortGame = `
     });
 }
 
-
-
 /**
  * This function will show the short game when the button is clicked
  */
@@ -75,7 +79,6 @@ let shortGame = `
     const shortGameButton = document.getElementById('short-game');
     shortGameButton.addEventListener('click', function() {
         gameBoardDiv.innerHTML = shortGame;
-        console.log('Im clicked');
     })
 }
 
@@ -99,5 +102,5 @@ playButton.addEventListener('click', function() {
 })
 }
 
-
 userInput();
+
