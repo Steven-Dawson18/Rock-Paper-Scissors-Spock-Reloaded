@@ -117,6 +117,18 @@ userInput();
 }
 
 /**
+ * This function will run if the computer wins and display a message and increment the computer score.
+ */
+
+ function lose(userChoice, computerChoice) {
+    computerScore++;
+    userScoreSpan.innerHTML = userScore;
+    computerScoreSpan.innerHTML = computerScore;
+    resultDiv.innerHTML = `${convertWord(userChoice)} loses to ${convertWord(computerChoice)}. ${firstName} LOST!`;
+    checkWinner();
+}
+
+/**
  * This function determines a winner between the users choice and 
  * the computer choice.
  * This will inturn run the win, lose or draw functions
