@@ -105,6 +105,19 @@ playButton.addEventListener('click', function() {
 userInput();
 
 /**
+ * This function will display the user and computer choice
+ * with a capital first letter to the user.
+ */
+
+ function convertWord(word) {
+    if(word === 'rock') return 'Rock';
+    if(word === 'paper') return 'Paper';
+    if(word === 'scissors') return 'Scissors';
+    if(word === 'lizard') return 'Lizard';
+    if(word === 'spock') return 'Spock';
+}
+
+/**
  * This function will run if the user wins and display a message and increment the user score.
  */
 
