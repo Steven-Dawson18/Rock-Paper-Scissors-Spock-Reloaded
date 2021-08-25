@@ -129,6 +129,16 @@ userInput();
 }
 
 /**
+ * This function will run if the game is a draw and display a message.
+ */
+
+ function draw(userChoice, computerChoice) {
+    userScoreSpan.innerHTML = userScore;
+    computerScoreSpan.innerHTML = computerScore;
+    resultDiv.innerHTML = `${convertWord(userChoice)} equals ${convertWord(computerChoice)}. Its a DRAW!`;
+}
+
+/**
  * This function determines a winner between the users choice and 
  * the computer choice.
  * This will inturn run the win, lose or draw functions
