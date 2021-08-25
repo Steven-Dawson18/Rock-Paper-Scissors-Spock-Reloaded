@@ -3,9 +3,9 @@ const containerDiv = document.getElementsByClassName('container');
 const playButton = document.getElementById('submit-name');
 const gameBoardDiv = document.getElementById('game-board');
 const userInputDiv = document.getElementById('user-input');
-const rules = document.getElementById('rules');
-const rulesImage = document.getElementById('rules-image');
-const shortGameButton = document.getElementById('short-game');
+
+
+
 
 /** This variable will hold the HTML for the game options page */
 
@@ -53,6 +53,32 @@ let shortGame = `
     <span id="user-score">0</span>:<span id="computer-score">0</span>
 </div>`
 
+/** 
+ * This functions will show and hide the game rules and how to play. 
+ */
+
+ function showRules() {
+    const rules = document.getElementById('rules');
+    const rulesImage = document.getElementById('rules-image');
+    rules.addEventListener('click', function() {
+    rulesImage.classList.toggle('hide');
+    });
+}
+
+
+
+/**
+ * This function will show the short game when the button is clicked
+ */
+
+ function shortGameSwitch() {
+    const shortGameButton = document.getElementById('short-game');
+    shortGameButton.addEventListener('click', function() {
+        gameBoardDiv.innerHTML = shortGame;
+        console.log('Im clicked');
+    })
+}
+
 /**
  * This function will store the name. of the user
  */
@@ -67,35 +93,11 @@ playButton.addEventListener('click', function() {
             gameBoardDiv.innerHTML = gameOptions; 
             document.getElementById('message').innerHTML = ('Hey ' + firstName + ' are you ready to play? Choose from the different game options below');
             userInputDiv.classList.add('hide');
+            showRules();
+            shortGameSwitch();
         }
 })
 }
 
 
 userInput();
-
-
-/** 
- * This functions will show and hide the game rules and how to play. 
- */
-
- function showRules() {
-    rules.addEventListener('click', function() {
-    rulesImage.classList.toggle('hide');
-    });
-}
-
-showRules();
-
-/**
- * This function will show the short game when the button is clicked
- */
-
- function shortGameSwitch() {
-    shortGameButton.addEventListener('click', function() {
-        gameBoardDiv.innerHTML = shortGame;
-        console.log('Im clicked');
-    })
-}
-
-shortGameSwitch();
