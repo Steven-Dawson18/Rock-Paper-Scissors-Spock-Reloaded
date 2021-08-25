@@ -92,10 +92,14 @@ function mediumGameSwitch() {
 function longGameSwitch() {
     const longGameButton = document.getElementById('long-game');
     longGameButton.addEventListener('click', function() {
-        winningScore = 10;
-        gameBoardDiv.innerHTML = shortGame;
-        userButtons()
+        gameSwitch(10);
     })
+}
+
+function gameSwitch(score) {
+    winningScore = score;
+    gameBoardDiv.innerHTML = shortGame;
+    userButtons();
 }
 
 /**
@@ -109,15 +113,21 @@ playButton.addEventListener('click', function() {
         if(!userInputName) {
             document.getElementById('message').innerHTML = ('Please enter your name to play!');
         } else {
-            gameBoardDiv.innerHTML = gameOptions; 
-            document.getElementById('message').innerHTML = ('Hey ' + firstName + ' are you ready to play? Choose from the different game options below');
-            userInputDiv.classList.add('hide');
-            showRules();
-            shortGameSwitch();
-            mediumGameSwitch();
-            longGameSwitch();
+            gameSetUp();
         }
 })
+}
+
+function gameSetUp() {
+    userScore = 0;
+    computerScore = 0;
+    gameBoardDiv.innerHTML = gameOptions; 
+    document.getElementById('message').innerHTML = ('Hey ' + firstName + ' are you ready to play? Choose from the different game options below');
+    userInputDiv.classList.add('hide');
+    showRules();
+    shortGameSwitch();
+    mediumGameSwitch();
+    longGameSwitch();
 }
 
 userInput();
@@ -179,13 +189,51 @@ userInput();
  */
 
 function checkWinner() {
-    if (userScore === winningScore) {
-        const resultDiv = document.querySelector('.result > p');
-        resultDiv.innerHTML = `${firstName} YOU WIN!`;
-    } else if (computerScore === winningScore) {
-        const resultDiv = document.querySelector('.result > p');
-        resultDiv.innerHTML = `Computer Wins!`;
+    const gameBoardDiv = document.getElementById('game-board');
+    if (winnerCalled()) {
+        gameBoardDiv.innerHTML = finalGame();
+        document.getElementById('play-again-btn').addEventListener('click', resetGame);
+        document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
     }
+    // if (userScore === winningScore) {
+    //     gameBoardDiv.innerHTML = 
+    //     document.getElementById('play-again-btn').addEventListener('click', resetGame);
+    //     document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
+    // } else if (computerScore === winningScore) {
+    //     gameBoardDiv.innerHTML = 
+    // document.getElementById('play-again-btn').addEventListener('click', resetGame);
+    // document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
+    // }
+}
+
+function winnerCalled() {
+    return userScore === winningScore || computerScore === winningScore;
+}
+
+function finalGame() {
+    if (userScore > computerScore) {
+        return `
+        <div id="winner-page">
+        <h2 id="win-msg">You Won!!!</h2>
+        <p id="final-score"> ${userScore} : ${computerScore}</p>
+        <button id="play-again-btn" class="btn">Play Again</button>
+        <button id="game-options-btn" class="btn">Game Options</button>
+    </div>`;
+    } else {
+        return `
+        <div id="loser-page">
+        <h2 id="win-msg">You Lost!!!</h2>
+        <p id="final-score"> ${userScore} : ${computerScore}</p>
+        <button id="play-again-btn" class="btn">Play Again</button>
+        <button id="game-options-btn" class="btn">Game Options</button>
+    </div>`;
+    }
+}
+
+function resetGame() {
+    userScore = 0;
+    computerScore = 0;
+    gameSwitch(winningScore);
 }
 
 /**
