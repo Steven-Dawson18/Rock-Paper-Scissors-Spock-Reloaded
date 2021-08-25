@@ -7,10 +7,6 @@ const containerDiv = document.getElementsByClassName('container');
 const playButton = document.getElementById('submit-name');
 const gameBoardDiv = document.getElementById('game-board');
 const userInputDiv = document.getElementById('user-input');
-const userScoreSpan = document.getElementById('user-score');
-const computerScoreSpan = document.getElementById('computer-score');
-
-
 
 /** This variable will hold the HTML for the game options page */
 
@@ -79,6 +75,7 @@ let shortGame = `
     const shortGameButton = document.getElementById('short-game');
     shortGameButton.addEventListener('click', function() {
         gameBoardDiv.innerHTML = shortGame;
+        userButtons()
     })
 }
 
@@ -123,6 +120,9 @@ userInput();
 
  function win(userChoice, computerChoice) {
     userScore++;
+    const userScoreSpan = document.getElementById('user-score');
+    const computerScoreSpan = document.getElementById('computer-score');
+    const resultDiv = document.querySelector('.result > p');
     userScoreSpan.innerHTML = userScore;
     computerScoreSpan.innerHTML = computerScore;
     resultDiv.innerHTML = `${convertWord(userChoice)} beats ${convertWord(computerChoice)}. ${firstName} WINS!`;
@@ -135,6 +135,9 @@ userInput();
 
  function lose(userChoice, computerChoice) {
     computerScore++;
+    const userScoreSpan = document.getElementById('user-score');
+    const computerScoreSpan = document.getElementById('computer-score');
+    const resultDiv = document.querySelector('.result > p');
     userScoreSpan.innerHTML = userScore;
     computerScoreSpan.innerHTML = computerScore;
     resultDiv.innerHTML = `${convertWord(userChoice)} loses to ${convertWord(computerChoice)}. ${firstName} LOST!`;
@@ -146,8 +149,7 @@ userInput();
  */
 
  function draw(userChoice, computerChoice) {
-    userScoreSpan.innerHTML = userScore;
-    computerScoreSpan.innerHTML = computerScore;
+    const resultDiv = document.querySelector('.result > p');
     resultDiv.innerHTML = `${convertWord(userChoice)} equals ${convertWord(computerChoice)}. Its a DRAW!`;
 }
 
@@ -157,10 +159,10 @@ userInput();
 
 function checkWinner() {
     if (userScore === winningScore) {
-        winnerPage.classList.remove('hide');
+        const resultDiv = document.querySelector('.result > p');
         resultDiv.innerHTML = `${firstName} YOU WIN!`;
     } else if (computerScore === winningScore) {
-        loserPage.classList.remove('hide');
+        const resultDiv = document.querySelector('.result > p');
         resultDiv.innerHTML = `Computer Wins!`;
     }
 }
