@@ -74,6 +74,25 @@ let shortGame = `
  function shortGameSwitch() {
     const shortGameButton = document.getElementById('short-game');
     shortGameButton.addEventListener('click', function() {
+        winningScore = 3;
+        gameBoardDiv.innerHTML = shortGame;
+        userButtons()
+    })
+}
+
+function mediumGameSwitch() {
+    const mediumGameButton = document.getElementById('medium-game');
+    mediumGameButton.addEventListener('click', function() {
+        winningScore = 5;
+        gameBoardDiv.innerHTML = shortGame;
+        userButtons()
+    })
+}
+
+function longGameSwitch() {
+    const longGameButton = document.getElementById('long-game');
+    longGameButton.addEventListener('click', function() {
+        winningScore = 10;
         gameBoardDiv.innerHTML = shortGame;
         userButtons()
     })
@@ -95,6 +114,8 @@ playButton.addEventListener('click', function() {
             userInputDiv.classList.add('hide');
             showRules();
             shortGameSwitch();
+            mediumGameSwitch();
+            longGameSwitch();
         }
 })
 }
