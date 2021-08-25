@@ -24,6 +24,34 @@ let gameOptions = `
     <button class="game-button" id="long-game">First to 10</button>
     `;
 
+    let shortGame = `
+    <p id="action-message">Make your move!</p>
+    <div id="choices">
+        <div class="choice" id="rock">
+            <img src="assets/images/rock.png" alt="image of a paper shaped hand">
+        </div>
+        <div class="choice" id="paper">
+            <img src="assets/images/paper.png" alt="image of a rock shaped fist">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="assets/images/scissors.png" alt="image of a scissor shaped hand">
+        </div>
+        <div class="choice" id="lizard">
+            <img src="assets/images/lizard.png" alt="image of a lizard shaped hand">
+        </div>
+        <div class="choice" id="spock">
+            <img src="assets/images/spock.png" alt="image of a spock shaped hand">
+        </div>
+    </div>
+    <div class="result">
+        <p>Can you beat the computer?</p>
+    </div>
+    <div class="scoreboard">
+        <div id="user-label" class="badge">User</div>
+        <div id="computer-label" class="badge">Comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>`
+
 /**
  * This function will store the name. of the user
  */
