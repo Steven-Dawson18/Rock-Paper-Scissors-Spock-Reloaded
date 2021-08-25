@@ -148,6 +148,17 @@ userInput();
 }
 
 /**
+ * This function will randomly pick one of the 5 choices
+ * to play against the users choice.
+ */
+
+ function getComputerChoice() {
+    let choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    let randomNumber = Math.floor(Math.random() * 5);
+    return choices[randomNumber];
+}
+
+/**
  * This function listens for the users input of either Rock, Paper, Scissors,
  * Lizard or Spock and then plays the game function
  */
