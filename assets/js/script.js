@@ -139,6 +139,20 @@ userInput();
 }
 
 /**
+ * This function will check if the user or computer wins the game
+ */
+
+function checkWinner() {
+    if (userScore === winningScore) {
+        winnerPage.classList.remove('hide');
+        resultDiv.innerHTML = `${firstName} YOU WIN!`;
+    } else if (computerScore === winningScore) {
+        loserPage.classList.remove('hide');
+        resultDiv.innerHTML = `Computer Wins!`;
+    }
+}
+
+/**
  * This function determines a winner between the users choice and 
  * the computer choice.
  * This will inturn run the win, lose or draw functions
