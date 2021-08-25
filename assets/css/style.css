@@ -13,7 +13,7 @@ body {
 
 main {
     background-color: cornflowerblue;
-    height: 70vh;
+    /* height: 70vh; */
     padding:40px;
 }
 
@@ -42,7 +42,7 @@ header {
     padding: 10px;
     box-shadow: 0 0 10px 2px;
     margin: 0 auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     text-align: center;
 }
 
