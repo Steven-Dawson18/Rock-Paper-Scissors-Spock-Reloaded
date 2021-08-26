@@ -172,6 +172,12 @@ footer {
     font-weight: bold;
 }
 
+.result p {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Style choices div */
 #choices {
     text-align: center;
