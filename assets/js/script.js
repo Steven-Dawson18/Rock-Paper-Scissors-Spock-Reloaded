@@ -202,7 +202,7 @@ function gameOver() {
     if (userScore > computerScore) {
         gameBoardDiv.innerHTML = `
         <div id="winner-page">
-        <h2 id="win-msg">You Won!!!</h2>
+        <h2 id="win-msg">Awesome ${firstName}, You Won!!!</h2>
         <p id="final-score"> ${userScore} : ${computerScore}</p>
         <button id="play-again-btn" class="btn">Play Again</button>
         <button id="game-options-btn" class="btn">Game Options</button>
@@ -210,7 +210,7 @@ function gameOver() {
     } else {
         gameBoardDiv.innerHTML = `
         <div id="loser-page">
-        <h2 id="win-msg">You Lost!!!</h2>
+        <h2 id="win-msg">Unlucky ${firstName}, You Lost!!!</h2>
         <p id="final-score"> ${userScore} : ${computerScore}</p>
         <button id="play-again-btn" class="btn">Play Again</button>
         <button id="game-options-btn" class="btn">Game Options</button>
