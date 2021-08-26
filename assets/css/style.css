@@ -165,6 +165,13 @@ footer {
     cursor: pointer;
 }
 
+/* Style action message */
+#action-message {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 /* Style choices div */
 #choices {
     text-align: center;
