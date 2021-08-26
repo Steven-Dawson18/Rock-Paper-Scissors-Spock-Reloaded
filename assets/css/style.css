@@ -239,3 +239,27 @@ footer {
 #play-again-btn {
     width: 120px;
 }
+
+/* Style winner page */
+
+#winner-page {
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+#win-msg {
+    font-size: 3rem;
+}
+
+#final-score {
+    font-size: 2rem;
+}
+
+#game-options-btn {
+    width: 120px;
+}
+
+#play-again-btn {
+    width: 120px;
+}
