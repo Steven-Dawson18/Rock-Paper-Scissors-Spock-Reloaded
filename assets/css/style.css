@@ -185,11 +185,13 @@ footer {
 }
 
 .choice {
+    width: 80px;
+    height: 80px;
     display: inline-block;
 }
 
 .choice > img {
-    width: 80%;
+    width: 100%;
 }
 
 .choice :hover {
@@ -279,3 +281,31 @@ footer {
 #play-again-btn {
     width: 120px;
 }
+
+#useer-choice-show {
+    border-radius: 50%;
+    border: 3px solid green;
+    box-shadow: 10px 10px 10px lightgreen;
+}
+
+/*media queries*/
+
+/* For large to medium screens sizes from 840px wide and down */
+
+
+    @media screen and (max-width: 840px) {
+        #title {
+            font-size: 200%;
+        }
+    } 
+
+    /* For large to medium screens sizes from 700px wide and down */
+
+    @media screen and (max-width: 700px) {
+      
+         .choice {
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+        }
+    } 
