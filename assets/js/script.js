@@ -189,30 +189,18 @@ userInput();
  */
 
 function checkWinner() {
-    const gameBoardDiv = document.getElementById('game-board');
     if (winnerCalled()) {
-        gameBoardDiv.innerHTML = finalGame();
-        document.getElementById('play-again-btn').addEventListener('click', resetGame);
-        document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
+        gameOver();
     }
-    // if (userScore === winningScore) {
-    //     gameBoardDiv.innerHTML = 
-    //     document.getElementById('play-again-btn').addEventListener('click', resetGame);
-    //     document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
-    // } else if (computerScore === winningScore) {
-    //     gameBoardDiv.innerHTML = 
-    // document.getElementById('play-again-btn').addEventListener('click', resetGame);
-    // document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
-    // }
 }
 
 function winnerCalled() {
     return userScore === winningScore || computerScore === winningScore;
 }
 
-function finalGame() {
+function gameOver() {
     if (userScore > computerScore) {
-        return `
+        gameBoardDiv.innerHTML = `
         <div id="winner-page">
         <h2 id="win-msg">You Won!!!</h2>
         <p id="final-score"> ${userScore} : ${computerScore}</p>
@@ -220,7 +208,7 @@ function finalGame() {
         <button id="game-options-btn" class="btn">Game Options</button>
     </div>`;
     } else {
-        return `
+        gameBoardDiv.innerHTML = `
         <div id="loser-page">
         <h2 id="win-msg">You Lost!!!</h2>
         <p id="final-score"> ${userScore} : ${computerScore}</p>
@@ -228,6 +216,8 @@ function finalGame() {
         <button id="game-options-btn" class="btn">Game Options</button>
     </div>`;
     }
+    document.getElementById('play-again-btn').addEventListener('click', resetGame);
+    document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
 }
 
 function resetGame() {

@@ -215,3 +215,27 @@ footer {
     top: 30px;
     right: -25px;
 }
+
+/* Style loser page */
+
+#loser-page {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+#win-msg {
+    font-size: 3rem;
+}
+
+#final-score {
+    font-size: 2rem;
+}
+
+#game-options-btn {
+    width: 120px;
+}
+
+#play-again-btn {
+    width: 120px;
+}
