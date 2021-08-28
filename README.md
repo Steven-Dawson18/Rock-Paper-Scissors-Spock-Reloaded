@@ -24,3 +24,11 @@ This website is to provide users with a fun and interactive gaming experience. T
 5. As a user playing the game, I would like to know if I won or Lost on the last turn.
 6. As a user playing the game, I would like to know if I won or Lost on the game.
 7. As participant, I want to be able to follow the events on social media so I can keep up to date with the latest news and games.
+
+## Features
+* User interactivity by using the users name to respond.
+* Socring system which is easy to follow.
+* Explanation of the game rules.
+* Link to video explaining the game rules.
+* Ability to play against the computer.
+* Game Over winner announcement.
