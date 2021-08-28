@@ -80,6 +80,9 @@ let shortGame = `
     })
 }
 
+/**
+ * This function will show the medium game when the button is clicked
+ */
 function mediumGameSwitch() {
     const mediumGameButton = document.getElementById('medium-game');
     mediumGameButton.addEventListener('click', function() {
@@ -89,6 +92,9 @@ function mediumGameSwitch() {
     })
 }
 
+/**
+ * This function will show the long game when the button is clicked
+ */
 function longGameSwitch() {
     const longGameButton = document.getElementById('long-game');
     longGameButton.addEventListener('click', function() {
@@ -118,6 +124,10 @@ playButton.addEventListener('click', function() {
 })
 }
 
+/**
+ * This function allows the user to select the game of their choice
+ * and relays a message back to the user.
+ */
 function gameSetUp() {
     userScore = 0;
     computerScore = 0;
@@ -187,7 +197,6 @@ userInput();
 /**
  * This function will check if the user or computer wins the game
  */
-
 function checkWinner() {
     if (winnerCalled()) {
         gameOver();
@@ -198,6 +207,10 @@ function winnerCalled() {
     return userScore === winningScore || computerScore === winningScore;
 }
 
+/**
+ * This function displays the winning or losing page
+ * and returns to the user the final score
+ */
 function gameOver() {
     if (userScore > computerScore) {
         gameBoardDiv.innerHTML = `
@@ -220,6 +233,11 @@ function gameOver() {
     document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
 }
 
+
+/**
+ * This function will reset the game so the user can play a different game with
+ * the score back to 0 - 0.
+ */
 function resetGame() {
     userScore = 0;
     computerScore = 0;
