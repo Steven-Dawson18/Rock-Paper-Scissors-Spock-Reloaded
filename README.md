@@ -32,3 +32,24 @@ This website is to provide users with a fun and interactive gaming experience. T
 * Link to video explaining the game rules.
 * Ability to play against the computer.
 * Game Over winner announcement.
+
+## Testing
+
+
+### Validatior Testing
+
+* HTML
+
+* CSS
+
+* Javascript
+
+## Unfixed Bugs
+
+## Deployment
+
+## Credits
+
+### Media
+
+### Content
