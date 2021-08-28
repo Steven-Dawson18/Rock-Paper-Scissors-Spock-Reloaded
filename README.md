@@ -14,3 +14,13 @@ This website is to provide users with a fun and interactive gaming experience. T
 ## Client Goals
 * Visitors are looking for and exciting and engaging game to play.
 * Easy to understand and intuitive website.
+
+## Client Stories
+
+1. As an new visitor to the website, I want to intuitively understand what the site is about.
+2. As an new visitor to the website, I want to be able to view the rules of the game.
+3. As a new visitor to the website, I would like the rules to be eplained to me.
+4. As a user playing the game, I would like to view the current score.
+5. As a user playing the game, I would like to know if I won or Lost on the last turn.
+6. As a user playing the game, I would like to know if I won or Lost on the game.
+7. As participant, I want to be able to follow the events on social media so I can keep up to date with the latest news and games.
