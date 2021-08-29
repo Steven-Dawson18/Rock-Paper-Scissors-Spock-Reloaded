@@ -131,13 +131,13 @@ label {
 
 /* Style Rules page */
 
-.rules-title {
-    color: red;
-}
-
-#game-selection > p {
+#play-rules {
     color: red;
     font-weight: bold;
+}
+
+.rules-title {
+    color: red;
 }
 
 #first-to-three {

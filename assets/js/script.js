@@ -73,8 +73,8 @@ let gameRules = `
     <p>and, as it always has,</p>
     <p>Rock crushes Scissors</p>
     </div>
-    <div id="game-selection>
-        <h3 class="rules-title>First to 3 wins</h3>
+    <div id="game-selection">
+        <h3 class="rules-title">First to 3 wins</h3>
         <p id="first-to-three">In this game mode you play against the computer until either you or the computer reaches 3 wins and then a winner is called.</p>
         <h3 class="rules-title">First to 5 wins</h3>
         <p id="first-to-five">In this game mode you play against the computer until either you or the computer reaches 5 wins and then a winner is called.</p>
