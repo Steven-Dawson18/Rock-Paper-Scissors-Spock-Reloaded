@@ -91,6 +91,7 @@ A link to the video which explains the rules is found on the options page and wi
 ![Scoreboard](assets/images/scoreboard.png)
 On the game page there is a clear scoreboard which will let the user know the current score.
 5. As a user playing the game, I would like to know if I won or Lost on the last turn.
+As can be seen in the previous image, a message is relayed to the user letting them know if they won, lost or drew the last turn.
 6. As a user playing the game, I would like to know if I won or Lost on the game.
 7. As participant, I want to be able to follow the events on social media so I can keep up to date with the latest news and games.
 
