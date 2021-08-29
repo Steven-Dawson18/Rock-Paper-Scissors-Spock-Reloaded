@@ -85,9 +85,11 @@ The opening page gives the user the information they need to know what the site 
 ![Rules Page](assets/images/rules-page.png)
 The link to the game rules are easily seen on the options page and clearly explained on the rules page. There is also a vidoe to help further explain the rules.
 3. As a new visitor to the website, I would like the rules to be eplained to me.
-![Rules Page](assets/images/rules-video.png)
+![Rules Video](assets/images/rules-video.png)
 A link to the video which explains the rules is found on the options page and will take the user to youtube in a new tab.
 4. As a user playing the game, I would like to view the current score.
+![Scoreboard](assets/images/scoreboard.png)
+On the game page there is a clear scoreboard which will let the user know the current score.
 5. As a user playing the game, I would like to know if I won or Lost on the last turn.
 6. As a user playing the game, I would like to know if I won or Lost on the game.
 7. As participant, I want to be able to follow the events on social media so I can keep up to date with the latest news and games.
