@@ -55,15 +55,44 @@ let shortGame = `
     <span id="user-score">0</span>:<span id="computer-score">0</span>
 </div>`
 
+/** This variable will hold the game rules html */
+
+let gameRules = `
+<div id="game-rules-page">
+    <div id="poem">
+    <h2 id="play-rules"> Rules</h2>
+    <p>Sicssors cuts Paper</p>
+    <p>Paper covers Rock</p>
+    <p>Rock crushes Lizard</p>
+    <p>Lizard poisons Spock</p>
+    <p>Spock smashes Scissors</p>
+    <p>Sicssors decapitates Lizard</p>
+    <p>Lizard eats Paper</p>
+    <p>Paper disproves Spock</p>
+    <p>Spock vaporizes Rock</p>
+    <p>and, as it always has,</p>
+    <p>Rock crushes Scissors</p>
+    </div>
+    <div id="game-selection>
+        <h3 class ="rules-title">First to 3 wins</h2>
+        <p id="first-to-three">In this game mode you play against the computer until either you or the computer reaches 3 wins and then a winner is called.</p>
+        <h3 class ="rules-title">First to 5 wins</h2>
+        <p id="first-to-five">In this game mode you play against the computer until either you or the computer reaches 5 wins and then a winner is called.</p>
+        <h3 class ="rules-title">First to 10 wins</h2>
+        <p id="first-to-ten">In this game mode you play against the computer until either you or the computer reaches 10 wins and then a winner is called.</p>
+    </div>
+</div>`
+
 /** 
  * This functions will show and hide the game rules and how to play. 
  */
 
  function showRules() {
     const rules = document.getElementById('rules');
-    const rulesImage = document.getElementById('rules-image');
+    // const rulesImage = document.getElementById('rules-image');
     rules.addEventListener('click', function() {
-    rulesImage.classList.toggle('hide');
+    // rulesImage.classList.toggle('hide');
+    gameBoardDiv.innerHTML = gameRules;
     });
 }
 
