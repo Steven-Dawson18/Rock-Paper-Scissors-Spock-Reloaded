@@ -60,18 +60,18 @@ let shortGame = `
 let gameRules = `
 <div id="game-rules-page">
     <div id="poem">
-    <h2 id="play-rules"> Rules</h2>
-    <p>Sicssors cuts Paper</p>
-    <p>Paper covers Rock</p>
-    <p>Rock crushes Lizard</p>
-    <p>Lizard poisons Spock</p>
-    <p>Spock smashes Scissors</p>
-    <p>Sicssors decapitates Lizard</p>
-    <p>Lizard eats Paper</p>
-    <p>Paper disproves Spock</p>
-    <p>Spock vaporizes Rock</p>
-    <p>and, as it always has,</p>
-    <p>Rock crushes Scissors</p>
+        <h2 id="play-rules"> Rules</h2>
+        <p>Sicssors cuts Paper</p>
+        <p>Paper covers Rock</p>
+        <p>Rock crushes Lizard</p>
+        <p>Lizard poisons Spock</p>
+        <p>Spock smashes Scissors</p>
+        <p>Sicssors decapitates Lizard</p>
+        <p>Lizard eats Paper</p>
+        <p>Paper disproves Spock</p>
+        <p>Spock vaporizes Rock</p>
+        <p>and, as it always has,</p>
+        <p>Rock crushes Scissors</p>
     </div>
     <div id="game-selection">
         <h3 class="rules-title">First to 3 wins</h3>

@@ -230,6 +230,7 @@ footer {
 .scoreboard {
     border: 3px solid black;
     width: 200px;
+    max-width: 80%;
     margin: 20px auto;
     color: black;
     font-size: 40px;
@@ -410,5 +411,9 @@ footer {
     #rules-video {
         margin-right: 0;
         display: block;
+    }
+
+    .badge {
+        font-size: 10px;
     }
 }
