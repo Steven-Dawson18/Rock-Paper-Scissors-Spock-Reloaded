@@ -42,7 +42,6 @@ header {
     padding: 10px;
     box-shadow: 0 0 10px 2px;
     margin: 0 auto;
-    /* margin-top: 30px; */
     text-align: center;
 }
 
@@ -110,14 +109,13 @@ label {
 
 #rules {
     font-size: 1.5rem;
-    width: 200px;
     color: red;
     cursor: pointer;
     display: inline-block;
 }
 
 #rules-video {
-    width: 200px;
+    margin-right: 30px;
     color: red;
     cursor: pointer;
     display: inline-block;
@@ -125,7 +123,6 @@ label {
 
 #video {
     font-size: 1.5rem;
-    width: 200px;
     color: red;
     cursor: pointer;
     text-decoration: none;
@@ -359,8 +356,29 @@ footer {
 /* For small to medium screens sizes from 640px wide and down */
 
 @media screen and (max-width: 640px) {
+
+    #game-board {
+        width: 800px;
+        max-width: 80%;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 2px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .game-button {
         display: block;
         margin: 10px auto;
+    }
+}
+
+
+/* For small screens sizes from 321px wide and down */
+
+@media screen and (max-width: 321px) {
+    #rules-video {
+        margin-right: 0;
+        display: block;
     }
 }
