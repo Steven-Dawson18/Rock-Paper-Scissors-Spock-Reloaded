@@ -108,10 +108,21 @@ In the GitHub repository, navigate to the Settings tab
 From the source section drop-down menu, select the Master Branch
 Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be viewed here: https://https://steven-dawson18.github.io/Rock-Paper-Scissors-Spock-Reloaded/
+The live link can be viewed here: https://steven-dawson18.github.io/Rock-Paper-Scissors-Spock-Reloaded/
 
 ## Credits
 
 ### Media
+#### The photos used on the home and sign up page are from Google Images and linked to original site:
+Rock image - https://www.google.com/
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMQDCxJilPcL5L9-wHJTBAVjOB7J9z2EIfenDw7MY8Dg-BQXhVCRZfTerHjSBdaF0UBM&usqp=CAU
+Paper image - https://www.google.com/
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1S9zQk2q592O-oELT4Wz-Vk9r1a6nf-SeFvm7mS0HkeMhJ_X7_VROraqoYY3LlZpOL44&usqp=CAU
+Scissor image - https://www.clipartmax.com/png/middle/428-4288836_your-hand-hand-clipart-png-rock-paper-scissors.png
+Lizard image - https://www.google.com/
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2nKCD7M1dJ1NjbftErHvA-ZTkqAhv-Leyui9xlGPgijHHWRIHOdzzFt1pfJClMX6_p9g&usqp=CAU
+Spock image - https://www.google.com/
+https://w7.pngwing.com/pngs/522/764/png-transparent-lizard-spock-rock-paper-scissors-vulcan-salute-others-purple-blue-game-thumbnail.png
+
 
 ### Content
