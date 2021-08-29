@@ -93,6 +93,8 @@ On the game page there is a clear scoreboard which will let the user know the cu
 5. As a user playing the game, I would like to know if I won or Lost on the last turn.
 As can be seen in the previous image, a message is relayed to the user letting them know if they won, lost or drew the last turn.
 6. As a user playing the game, I would like to know if I won or Lost on the game.
+![Victory Page](assets/images/win.png)
+Once eight the user or the computer reaches the winning score, the user is shown either the winning or losing page with the final score displayed with a winning or losing message.
 7. As participant, I want to be able to follow the events on social media so I can keep up to date with the latest news and games.
 
 ## Unfixed Bugs
