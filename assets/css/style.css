@@ -129,6 +129,36 @@ label {
     display: inline-block;
 }
 
+/* Style Rules page */
+
+.rules-title {
+    color: red;
+}
+
+#game-selection > p {
+    color: red;
+    font-weight: bold;
+}
+
+#first-to-three {
+    padding: 5px 20px;
+    color: blue;
+}
+
+#first-to-five {
+    padding: 5px 20px;
+    color: blue;
+}
+
+#first-to-ten {
+    padding: 5px 20px;
+    color: blue;
+}
+
+#poem p {
+    color: green;
+}
+
 /* Footer social media links */
 footer {
     height: 100px;
