@@ -37,10 +37,20 @@ This website is to provide users with a fun and interactive gaming experience. T
 
 ## Testing
 
+* During the testing process I have used the Google Chrome Developer Tools to view each aspect of the site in different widths to make sure that it is responsive to screen size change and also viewed on the different divices such as ipad, iphone 6 and iphone 6 plus to make sure that each element works as it should.
+* The project has also been published to GItHub Pages and viewed in different screen widths to check the responsiveness of the site and make sure all links work as they should. Below are the different testing processes I have put the site through:
+
 
 ### Validatior Testing
 
+* HTML issues highlighted
+* The first time I put the code into the validator it came up with an error I have since corrected. This was as follows:
+* Stray closing div tag.
+
 * HTML
+No errors were returned when passing through the official W3C validator once the corrections had been made. Images of validation pass are below:
+
+![HTML Testing](assets/images/html-validator.png)
 
 * CSS
 
