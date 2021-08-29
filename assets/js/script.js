@@ -85,15 +85,20 @@ let gameRules = `
 </div>`
 
 /** 
- * This functions will show and hide the game rules and how to play. 
+ * This functions will show the game rules and how to play. 
  */
 
  function showRules() {
     const rules = document.getElementById('rules');
     rules.addEventListener('click', function() {
     gameBoardDiv.innerHTML = gameRules;
+    document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
     });
 }
+
+// function hideRules() {
+//     document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
+// }
 
 /**
  * This function will show the short game when the button is clicked
