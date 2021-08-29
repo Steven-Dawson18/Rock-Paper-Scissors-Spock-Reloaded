@@ -8,6 +8,8 @@ The aim of this website is to provide an online game to users that want a few mi
 ## Description
 This website is to provide users with a fun and interactive gaming experience. The game is a fun adaptation of the popular game of Rock Paper Scissors which adds to the excitement of the game. Those users who are familiar with the program Big Bang Theory will be aware of the game and for those who are not a video is linked in the rules to play the game.
 
+![Rock Paper Lizard Spock](assets/images/responsive-design.png)
+
 ## Business Goals
 * Excellent UX to keep visitors on the site engaged in the game.
 * Provide links to the business social media pages.
