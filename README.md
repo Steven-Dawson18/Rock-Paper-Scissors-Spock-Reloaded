@@ -77,6 +77,15 @@ The most complex function has a cyclomatic complexity value of 26 while the medi
 
 * Firefox browser - All site works well
 
+### Testing User Stories
+1. As an new visitor to the website, I want to intuitively understand what the site is about.
+![Opening Page](assets/images/opening-page.png)
+2. As an new visitor to the website, I want to be able to view the rules of the game.
+3. As a new visitor to the website, I would like the rules to be eplained to me.
+4. As a user playing the game, I would like to view the current score.
+5. As a user playing the game, I would like to know if I won or Lost on the last turn.
+6. As a user playing the game, I would like to know if I won or Lost on the game.
+7. As participant, I want to be able to follow the events on social media so I can keep up to date with the latest news and games.
 
 ## Unfixed Bugs
 
