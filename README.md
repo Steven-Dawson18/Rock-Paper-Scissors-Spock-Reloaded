@@ -83,7 +83,10 @@ The most complex function has a cyclomatic complexity value of 26 while the medi
 The opening page gives the user the information they need to know what the site is about.
 2. As an new visitor to the website, I want to be able to view the rules of the game.
 ![Rules Page](assets/images/rules-page.png)
+The link to the game rules are easily seen on the options page and clearly explained on the rules page. There is also a vidoe to help further explain the rules.
 3. As a new visitor to the website, I would like the rules to be eplained to me.
+![Rules Page](assets/images/rules-video.png)
+A link to the video which explains the rules is found on the options page and will take the user to youtube in a new tab.
 4. As a user playing the game, I would like to view the current score.
 5. As a user playing the game, I would like to know if I won or Lost on the last turn.
 6. As a user playing the game, I would like to know if I won or Lost on the game.
