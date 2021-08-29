@@ -81,6 +81,7 @@ let gameRules = `
         <h3 class ="rules-title">First to 10 wins</h2>
         <p id="first-to-ten">In this game mode you play against the computer until either you or the computer reaches 10 wins and then a winner is called.</p>
     </div>
+    <button id="game-options-btn" class="btn">Game Options</button>
 </div>`
 
 /** 
@@ -89,9 +90,7 @@ let gameRules = `
 
  function showRules() {
     const rules = document.getElementById('rules');
-    // const rulesImage = document.getElementById('rules-image');
     rules.addEventListener('click', function() {
-    // rulesImage.classList.toggle('hide');
     gameBoardDiv.innerHTML = gameRules;
     });
 }
