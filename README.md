@@ -52,9 +52,31 @@ No errors were returned when passing through the official W3C validator once the
 
 ![HTML Testing](assets/images/html-validator.png)
 
-* CSS
+* CSS validator highlighted no errors.
+
+No errors were found when passing through the official (Jigsaw) validator.
+
 
 * Javascript
+When put through JSHINT it highlighted that there were a few missing semicolons which have been fixed.
+
+JSHINT Metrics
+There are 29 functions in this file.
+
+Function with the largest signature take 2 arguments, while the median is 0.
+
+Largest function has 10 statements in it, while the median is 2.
+
+The most complex function has a cyclomatic complexity value of 26 while the median is 1.
+
+### Testing different in browsers
+
+* Chrome browser - All site works well
+
+* Safari browser -  All site works well
+
+* Firefox browser - All site works well
+
 
 ## Unfixed Bugs
 
