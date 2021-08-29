@@ -96,6 +96,8 @@ As can be seen in the previous image, a message is relayed to the user letting t
 ![Victory Page](assets/images/win.png)
 Once eight the user or the computer reaches the winning score, the user is shown either the winning or losing page with the final score displayed with a winning or losing message.
 7. As participant, I want to be able to follow the events on social media so I can keep up to date with the latest news and games.
+![VictorSocial media links](assets/images/socials.png)
+At the bottom of each page the social media links are able to be clicked to open in a new tab"
 
 ## Unfixed Bugs
 
