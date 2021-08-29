@@ -82,6 +82,13 @@ The most complex function has a cyclomatic complexity value of 26 while the medi
 
 ## Deployment
 
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master Branch
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be viewed here: https://https://steven-dawson18.github.io/Rock-Paper-Scissors-Spock-Reloaded/
+
 ## Credits
 
 ### Media
