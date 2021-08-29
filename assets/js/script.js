@@ -8,6 +8,20 @@ const playButton = document.getElementById('submit-name');
 const gameBoardDiv = document.getElementById('game-board');
 const userInputDiv = document.getElementById('user-input');
 
+let startPage = `
+    <div>
+        <p id="intro">Welcome to the Rock, Paper, Lizard Spock gaming site. Rock, Paper, Lizard Spock is a modern twist on the popular clasic game of Rock, Paper Scissors. In order to play, please enter your name below.</p>
+    </div>
+    <!-- User input -->
+    <div id="user-input">
+        <label for="fname">Enter your name:</label>
+        <br>
+        <input id="fname" type="text">
+        <br>
+        <button type="button" id="submit-name" class="btn">Play</button>
+        <p id="message">Please enter your name above to play game.</p>
+    </div>`;
+
 /** This variable will hold the HTML for the game options page */
 
 let gameOptions = `
@@ -96,10 +110,6 @@ let gameRules = `
     });
 }
 
-// function hideRules() {
-//     document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
-// }
-
 /**
  * This function will show the short game when the button is clicked
  */
@@ -172,8 +182,6 @@ function gameSetUp() {
     mediumGameSwitch();
     longGameSwitch();
 }
-
-userInput();
 
 /**
  * This function will display the user and computer choice
@@ -252,6 +260,7 @@ function gameOver() {
         <p id="final-score"> ${userScore} : ${computerScore}</p>
         <button id="play-again-btn" class="btn">Play Again</button>
         <button id="game-options-btn" class="btn">Game Options</button>
+        <button id="end-game" class="btn">End Game</button>
     </div>`;
     } else {
         gameBoardDiv.innerHTML = `
@@ -260,10 +269,21 @@ function gameOver() {
         <p id="final-score"> ${userScore} : ${computerScore}</p>
         <button id="play-again-btn" class="btn">Play Again</button>
         <button id="game-options-btn" class="btn">Game Options</button>
+        <button id="end-game" class="btn">End Game</button>
     </div>`;
     }
     document.getElementById('play-again-btn').addEventListener('click', resetGame);
     document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
+    document.getElementById('end-game').addEventListener('click', endGame);
+}
+
+/**
+ * This function will end the game and return to the starting page
+ * where the user can use a different name.
+ */
+
+function endGame() {
+        location.reload();
 }
 
 
@@ -358,3 +378,5 @@ function resetGame() {
         game('spock');
     });
 }
+
+userInput();
