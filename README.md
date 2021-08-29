@@ -80,7 +80,9 @@ The most complex function has a cyclomatic complexity value of 26 while the medi
 ### Testing User Stories
 1. As an new visitor to the website, I want to intuitively understand what the site is about.
 ![Opening Page](assets/images/opening-page.png)
+The opening page gives the user the information they need to know what the site is about.
 2. As an new visitor to the website, I want to be able to view the rules of the game.
+![Rules Page](assets/images/rules-page.png)
 3. As a new visitor to the website, I would like the rules to be eplained to me.
 4. As a user playing the game, I would like to view the current score.
 5. As a user playing the game, I would like to know if I won or Lost on the last turn.
