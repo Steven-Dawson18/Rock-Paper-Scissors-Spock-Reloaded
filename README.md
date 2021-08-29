@@ -126,3 +126,10 @@ https://w7.pngwing.com/pngs/522/764/png-transparent-lizard-spock-rock-paper-scis
 
 
 ### Content
+Inspiration for the project was taken from a youtube tutorial by freecodecamp.org on rock paper scissors- https://www.youtube.com/watch?v=jaVNP3nIAv0
+
+Javascript code was used from this tutorial as inspiration and adapted for use in my project and have been mentioned in the comments in the code as well as below.
+
+* userButtons FUnction
+
+* game function

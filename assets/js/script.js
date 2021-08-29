@@ -286,6 +286,7 @@ function resetGame() {
  * This function determines a winner between the users choice and 
  * the computer choice.
  * This will inturn run the win, lose or draw functions
+ * Inspiration taken from freecodecamp.org and adapted for this project
  */
 
  function game(userChoice) {
@@ -339,6 +340,7 @@ function resetGame() {
 /**
  * This function listens for the users input of either Rock, Paper, Scissors,
  * Lizard or Spock and then plays the game function
+ * Inspiration taken from freecodecamp.org and adapted for this project.
  */
 
  function userButtons() {
