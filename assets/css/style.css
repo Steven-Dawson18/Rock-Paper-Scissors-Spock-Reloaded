@@ -285,6 +285,10 @@ footer {
     width: 120px;
 }
 
+#end-game {
+    width: 120px;
+}
+
 /* Style winner page */
 
 #winner-page {
@@ -399,6 +403,26 @@ footer {
     .game-button {
         display: block;
         margin: 10px auto;
+    }
+}
+
+/* For small to medium screens sizes from 570px wide and down */
+
+@media screen and (max-width: 570px) {
+    
+    #game-options-btn {
+        display: block;
+        margin: 5px auto;
+    }
+    
+    #play-again-btn {
+        display: block;
+        margin: 5px auto;
+    }
+    
+    #end-game {
+        display: block;
+        margin: 5px auto;
     }
 }
 
