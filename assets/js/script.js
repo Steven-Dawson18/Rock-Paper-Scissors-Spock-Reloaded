@@ -3,24 +3,9 @@ let userScore = 0;
 let computerScore = 0;
 let winningScore = 3;
 
-const containerDiv = document.getElementsByClassName('container');
 const playButton = document.getElementById('submit-name');
 const gameBoardDiv = document.getElementById('game-board');
 const userInputDiv = document.getElementById('user-input');
-
-let startPage = `
-    <div>
-        <p id="intro">Welcome to the Rock, Paper, Lizard Spock gaming site. Rock, Paper, Lizard Spock is a modern twist on the popular clasic game of Rock, Paper Scissors. In order to play, please enter your name below.</p>
-    </div>
-    <!-- User input -->
-    <div id="user-input">
-        <label for="fname">Enter your name:</label>
-        <br>
-        <input id="fname" type="text">
-        <br>
-        <button type="button" id="submit-name" class="btn">Play</button>
-        <p id="message">Please enter your name above to play game.</p>
-    </div>`;
 
 /** This variable will hold the HTML for the game options page */
 
@@ -67,7 +52,7 @@ let shortGame = `
     <div id="user-label" class="badge">User</div>
     <div id="computer-label" class="badge">Comp</div>
     <span id="user-score">0</span>:<span id="computer-score">0</span>
-</div>`
+</div>`;
 
 /** This variable will hold the game rules html */
 
@@ -96,7 +81,7 @@ let gameRules = `
         <p id="first-to-ten">In this game mode you play against the computer until either you or the computer reaches 10 wins and then a winner is called.</p>
     </div>
     <button id="game-options-btn" class="btn">Game Options</button>
-</div>`
+</div>`;
 
 /** 
  * This functions will show the game rules and how to play. 
@@ -119,8 +104,8 @@ let gameRules = `
     shortGameButton.addEventListener('click', function() {
         winningScore = 3;
         gameBoardDiv.innerHTML = shortGame;
-        userButtons()
-    })
+        userButtons();
+    });
 }
 
 /**
@@ -131,8 +116,8 @@ function mediumGameSwitch() {
     mediumGameButton.addEventListener('click', function() {
         winningScore = 5;
         gameBoardDiv.innerHTML = shortGame;
-        userButtons()
-    })
+        userButtons();
+    });
 }
 
 /**
@@ -142,7 +127,7 @@ function longGameSwitch() {
     const longGameButton = document.getElementById('long-game');
     longGameButton.addEventListener('click', function() {
         gameSwitch(10);
-    })
+    });
 }
 
 function gameSwitch(score) {
@@ -164,7 +149,7 @@ playButton.addEventListener('click', function() {
         } else {
             gameSetUp();
         }
-})
+});
 }
 
 /**
@@ -256,21 +241,21 @@ function gameOver() {
     if (userScore > computerScore) {
         gameBoardDiv.innerHTML = `
         <div id="winner-page">
-        <h2 id="win-msg">Awesome ${firstName}, You Won!!!</h2>
-        <p id="final-score"> ${userScore} : ${computerScore}</p>
-        <button id="play-again-btn" class="btn">Play Again</button>
-        <button id="game-options-btn" class="btn">Game Options</button>
-        <button id="end-game" class="btn">End Game</button>
-    </div>`;
+            <h2 id="win-msg">Awesome ${firstName}, You Won!!!</h2>
+            <p id="final-score"> ${userScore} : ${computerScore}</p>
+            <button id="play-again-btn" class="btn">Play Again</button>
+            <button id="game-options-btn" class="btn">Game Options</button>
+            <button id="end-game" class="btn">End Game</button>
+        </div>`;
     } else {
         gameBoardDiv.innerHTML = `
         <div id="loser-page">
-        <h2 id="win-msg">Unlucky ${firstName}, You Lost!!!</h2>
-        <p id="final-score"> ${userScore} : ${computerScore}</p>
-        <button id="play-again-btn" class="btn">Play Again</button>
-        <button id="game-options-btn" class="btn">Game Options</button>
-        <button id="end-game" class="btn">End Game</button>
-    </div>`;
+            <h2 id="win-msg">Unlucky ${firstName}, You Lost!!!</h2>
+            <p id="final-score"> ${userScore} : ${computerScore}</p>
+            <button id="play-again-btn" class="btn">Play Again</button>
+            <button id="game-options-btn" class="btn">Game Options</button>
+            <button id="end-game" class="btn">End Game</button>
+        </div>`;
     }
     document.getElementById('play-again-btn').addEventListener('click', resetGame);
     document.getElementById('game-options-btn').addEventListener('click', gameSetUp);
