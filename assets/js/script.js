@@ -147,7 +147,7 @@ playButton.addEventListener('click', function() {
    let userInputName = document.getElementById('fname').value;
         firstName = userInputName;
         if(!userInputName) {
-            document.getElementById('message').innerHTML = ('Please enter your name to play!');
+            document.getElementById('message').innerHTML = '<span style="color:red">Please enter your name to play!</span>';
         } else {
             gameSetUp();
         }
