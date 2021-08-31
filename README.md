@@ -29,11 +29,30 @@ This website is to provide users with a fun and interactive gaming experience. T
 
 ## Features
 * User interactivity by using the users name to respond.
+![User interactivity](assets/images/personal-response.png)
+By responding to the user using their name, the game has a personal feel to it, making you feel more involved in the experience. This is used throughout the game on the winner and loser page.
+
 * Scoring system which is easy to follow.
+![Scoring system](assets/images/scoreboard.png)
+The scoreboard is easy to understand with the labels stating which score is the users and the computers.
+
 * Explanation of the game rules.
+![Rules explanation](assets/images/rules-page.png)
+The rules are clearly explained on a seperate page which takes the user back to the options page once they are satisfied. The rules page explaines the rules of the game and the three game options to choose from.
+
 * Link to video explaining the game rules.
+![Rules Video](assets/images/rules-video.png)
+If the user requires a verbal explanation of the rules they can click on the link on the options page. This will open youtube in a new tab on the users device.
+![Rules Video](assets/images/rules-video-link.png)
+The video is an fun explanation of the rules from the characters from the popular tv show Big Bang Theory.
+
 * Ability to play against the computer.
+![User vs computer](assets/images/scoreboard.png)
+The user is pitted against the computer in this game of chance. For each turn the user makes the computer randomly takes its turn and the result is displayed to the user in the response statement above the scoreboard.
+
 * Game Over winner announcement.
+![Result of game](assets/images/win.png)
+When the selected game has run its course by either the user or computer reaching the winning score, the game will announce if the user has won or lost and display a mesasage with the final score. The useer will have three options at this point. To play the game again, go back to the options page to select a different game or end the game, taking the user to the start page where a new user can input their name and play.
 
 ## Wireframe Mock Ups
 
