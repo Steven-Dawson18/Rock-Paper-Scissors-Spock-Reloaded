@@ -68,6 +68,10 @@ label {
     font-size: 30px;
 }
 
+#fname:hover {
+    border: 1px solid aqua;
+}
+
 .btn {
     width: 100px;
     border: 2px solid white;
