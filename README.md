@@ -29,11 +29,25 @@ This website is to provide users with a fun and interactive gaming experience. T
 
 ## Features
 * User interactivity by using the users name to respond.
-* Socring system which is easy to follow.
+* Scoring system which is easy to follow.
 * Explanation of the game rules.
 * Link to video explaining the game rules.
 * Ability to play against the computer.
 * Game Over winner announcement.
+
+## Wireframe Mock Ups
+
+* Here is wireframe mock up of the planned game site on a desktop:
+
+![Mock Up Desktop](assets/images/rpsls-desktop.png)
+
+* Here is wireframe mock up of the planned game site on a Tablet device:
+
+![Mock Up Tablet](assets/images/rpsls-tab.png)
+
+* Here is wireframe mock up of the planned game site on a Mobile device:
+
+![Mock Up Mobile](assets/images/rpsls-mobile.png)
 
 ## Testing
 
