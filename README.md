@@ -134,6 +134,8 @@ At the bottom of each page the social media links are able to be clicked to open
 
 ## Unfixed Bugs
 
+* There are no unfixed bugs in this game.
+
 ## Deployment
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
