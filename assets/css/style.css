@@ -43,11 +43,13 @@ header {
     text-align: center;
 }
 
+/* Style intro message */
 #intro {
     text-align: center;
     font-size: 2rem;
     padding: 10px;
 }
+
 label {
     color: limegreen;
     font-size: 30px;
@@ -91,6 +93,8 @@ label {
     display: none;
 }
 
+/* Style for the options page */
+
 #message {
     font-size: 30px;
     text-align: center;
@@ -105,6 +109,21 @@ label {
 
 #game-options-page {
     text-align: center;
+}
+
+.game-button {
+    width: 100px;
+    border: 2px solid white;
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.game-button:hover {
+    border: 2px solid aqua;
+    background-color: white;
 }
 
 /* Rules links */
@@ -190,21 +209,6 @@ footer {
     text-align: center;
 }
 
-.game-button {
-    width: 100px;
-    border: 2px solid white;
-    background-color: aqua;
-    border-radius: 5px;
-    margin: 20px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.game-button:hover {
-    border: 2px solid aqua;
-    background-color: white;
-}
-
 /* Style action message */
 #action-message {
     text-align: center;
@@ -233,15 +237,13 @@ footer {
 
 .choice:hover {
     border: 3px solid aqua;
+    cursor: pointer;
 }
 
 .choice > img {
     width: 100%;
 }
 
-.choice :hover {
-    cursor: pointer;
-}
 
 /* Style scoreboard divs */
 .scoreboard {

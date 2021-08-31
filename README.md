@@ -165,6 +165,6 @@ Inspiration for the project was taken from a youtube tutorial by freecodecamp.or
 
 Javascript code was used from this tutorial as inspiration and adapted for use in my project and have been mentioned in the comments in the code as well as below.
 
-* userButtons FUnction
+* userButtons Function
 
 * game function
