@@ -28,7 +28,7 @@ let gameOptions = `
     `;
 
 /** This variable hods the HTML for the short game */
-let shortGame = `
+let playGame = `
 <p id="action-message">Make your move!</p>
 <div id="choices">
     <div class="choice" id="rock">
@@ -105,7 +105,7 @@ let gameRules = `
     const shortGameButton = document.getElementById('short-game');
     shortGameButton.addEventListener('click', function() {
         winningScore = 3;
-        gameBoardDiv.innerHTML = shortGame;
+        gameBoardDiv.innerHTML = playGame;
         userButtons();
     });
 }
@@ -117,7 +117,7 @@ function mediumGameSwitch() {
     const mediumGameButton = document.getElementById('medium-game');
     mediumGameButton.addEventListener('click', function() {
         winningScore = 5;
-        gameBoardDiv.innerHTML = shortGame;
+        gameBoardDiv.innerHTML = playGame;
         userButtons();
     });
 }
@@ -134,24 +134,34 @@ function longGameSwitch() {
 
 function gameSwitch(score) {
     winningScore = score;
-    gameBoardDiv.innerHTML = shortGame;
+    gameBoardDiv.innerHTML = playGame;
     userButtons();
 }
+
+// Allow user to press enter instead of manually clicking
+//This code has been taken from w3schools website: https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+let input = document.getElementById("fname");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("submit-name").click();
+  }
+});
 
 /**
  * This function will store the name. of the user
  */
 
 function userInput() {
-playButton.addEventListener('click', function() {
-   let userInputName = document.getElementById('fname').value;
+    playButton.addEventListener('click', function() {
+        let userInputName = document.getElementById('fname').value.trim();
         firstName = userInputName;
         if(!userInputName) {
             document.getElementById('message').innerHTML = '<span style="color:red">Please enter your name to play!</span>';
         } else {
             gameSetUp();
         }
-});
+    });
 }
 
 /**
@@ -270,7 +280,7 @@ function gameOver() {
  */
 
 function endGame() {
-        location.reload();
+    location.reload();
 }
 
 
@@ -362,7 +372,7 @@ function resetGame() {
     lizardDiv.addEventListener('click', function() {
         game('lizard');
     });
-        const spockDiv = document.getElementById('spock');
+    const spockDiv = document.getElementById('spock');
     spockDiv.addEventListener('click', function() {
         game('spock');
     });
