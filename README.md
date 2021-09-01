@@ -138,6 +138,8 @@ When testing the responsiveness of the site a few bugs were found and corrected.
 * The user input on the fist page of the site strayed out of the containing div. To fix this I added a max width to the input.
 * The scoreboard strayed out of the container div. To fix this I added a max width to the div and reduced the font size of the labels.
 * From testing the site I noticed that the game would start if the useer input a space and nothing else. To fix this I added the trim method to the input.
+* The user buttons for the game had a strange alignment on smaller screen sizes. To fix this I reduced the size of the images and removed the margin between them.
+* When I put the index.html into the validator, an extra closed div element was found. To solve this I removed the extra close div element.
 ### Unfixed Bugs
 
 * There are no unfixed bugs in this game.
