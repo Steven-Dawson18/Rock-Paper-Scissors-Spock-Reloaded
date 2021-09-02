@@ -110,6 +110,20 @@ The most complex function has a cyclomatic complexity value of 26 while the medi
 
 * Firefox browser - All site works well
 
+### Testing on different devices
+
+* Desktop - macbook pro
+The site works well on a desktop with no issures found 
+
+* Samsung Galaxy Tab A6
+The site works well in protrait and landscape on the Samsung Galaxy Tab A6.
+
+* iphone 7 Testing
+The site works well in protrait and landscape on the iphone 7. 
+
+* iphone 11 Testing
+The site works well in protrait and landscape on the iphone.
+
 ### Testing User Stories
 1. As an new visitor to the website, I want to intuitively understand what the site is about.
 ![Opening Page](assets/images/opening-page.png)
