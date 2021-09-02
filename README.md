@@ -89,18 +89,22 @@ No errors were returned when passing through the official W3C validator once the
 
 No errors were found when passing through the official (Jigsaw) validator.
 
+![CSS Testing](assets/images/css-validator.png)
+
 
 * Javascript
 When put through JSHINT it highlighted that there were a few missing semicolons which have been fixed.
 
-JSHINT Metrics
-There are 29 functions in this file.
+Metrics
+There are 33 functions in this file.
 
 Function with the largest signature take 2 arguments, while the median is 0.
 
 Largest function has 10 statements in it, while the median is 2.
 
 The most complex function has a cyclomatic complexity value of 26 while the median is 1.
+
+![JSHINT Testing](assets/images/jshint.png)
 
 ### Testing different in browsers
 

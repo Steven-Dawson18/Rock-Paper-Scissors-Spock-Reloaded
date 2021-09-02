@@ -1,6 +1,6 @@
 // This event listner will wait for the DOM to load before content works
 window.addEventListener('DOMContentLoaded', (event) => {
-    onLoad = document.getElementById('fname').focus();
+    document.getElementById('fname').focus();
     userInput();
 });
 
