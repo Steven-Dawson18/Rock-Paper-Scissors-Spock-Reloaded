@@ -1,8 +1,8 @@
+// This event listner will wait for the DOM to load before content works
 window.addEventListener('DOMContentLoaded', (event) => {
     onLoad = document.getElementById('fname').focus();
     userInput();
 });
-onLoad = document.getElementById('fname').focus();
 
 let firstName = "friend";
 let userScore = 0;
@@ -297,6 +297,14 @@ function resetGame() {
     gameSwitch(winningScore);
 }
 
+function resetMove() {
+    const userMoveButton = document.getElementById(userChoice);
+    userMoveButton.classList.remove('user-color');
+    const computerMoveButton = document.getElementById(computerChoice);
+    computerMoveButton.classList.remove('comp-color');
+    game();
+}
+
 /**
  * This function determines a winner between the users choice and 
  * the computer choice.
@@ -308,6 +316,12 @@ function resetGame() {
     const computerChoice = getComputerChoice();
     const userMoveButton = document.getElementById(userChoice);
     userMoveButton.classList.toggle('user-color');
+    setTimeout(function(){ 
+        userMoveButton.classList.toggle('user-color'); }, 1000);
+    const computerMoveButton = document.getElementById(computerChoice);
+    computerMoveButton.classList.toggle('comp-color');
+    setTimeout(function(){ 
+        computerMoveButton.classList.toggle('comp-color'); }, 1000);
     switch (userChoice + computerChoice) {
         case 'rockscissors':
         case 'rocklizard':
@@ -332,6 +346,7 @@ function resetGame() {
         case 'rockspock':
         case 'scissorsspock':
             lose(userChoice, computerChoice);
+            resetMove();
           break;
         case 'rockrock':
         case 'paperpaper':
@@ -339,6 +354,7 @@ function resetGame() {
         case 'lizardlizard':
         case 'spockspock':
             draw(userChoice, computerChoice);
+            resetMove();
           break;
     }
 }
