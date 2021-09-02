@@ -135,6 +135,9 @@ function longGameSwitch() {
     });
 }
 
+/**
+ * This function will set the winning score for the correct game 
+ */
 function gameSwitch(score) {
     winningScore = score;
     gameBoardDiv.innerHTML = playGame;
@@ -286,7 +289,6 @@ function endGame() {
     location.reload();
 }
 
-
 /**
  * This function will reset the game so the user can play a different game with
  * the score back to 0 - 0.
@@ -297,18 +299,9 @@ function resetGame() {
     gameSwitch(winningScore);
 }
 
-function resetMove() {
-    const userMoveButton = document.getElementById(userChoice);
-    userMoveButton.classList.remove('user-color');
-    const computerMoveButton = document.getElementById(computerChoice);
-    computerMoveButton.classList.remove('comp-color');
-    game();
-}
-
 /**
  * This function determines a winner between the users choice and 
- * the computer choice.
- * This will inturn run the win, lose or draw functions
+ * the computer choice. This will inturn run the win, lose or draw functions
  * Inspiration taken from freecodecamp.org and adapted for this project
  */
 
@@ -346,7 +339,6 @@ function resetMove() {
         case 'rockspock':
         case 'scissorsspock':
             lose(userChoice, computerChoice);
-            resetMove();
           break;
         case 'rockrock':
         case 'paperpaper':
@@ -354,7 +346,6 @@ function resetMove() {
         case 'lizardlizard':
         case 'spockspock':
             draw(userChoice, computerChoice);
-            resetMove();
           break;
     }
 }

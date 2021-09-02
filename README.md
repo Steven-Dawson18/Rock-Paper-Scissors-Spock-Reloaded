@@ -155,6 +155,7 @@ When testing the responsiveness of the site a few bugs were found and corrected.
 * The user buttons for the game had a strange alignment on smaller screen sizes. To fix this I reduced the size of the images and removed the margin between them.
 * When I put the index.html into the validator, an extra closed div element was found. To solve this I removed the extra close div element.
 * When I put the javascript code in to the JSHINT a few errors where found where I had not put a semicolon. These have since been added and the code passes through the JSHINT without any significant issues.
+* When using the Chrome developer tools I found an error relating to a picture referenced in the javascript which I had removed as I changed my idea to show the rules on a new page. I have since removed the code from the javascript file.
 
 ### Unfixed Bugs
 
