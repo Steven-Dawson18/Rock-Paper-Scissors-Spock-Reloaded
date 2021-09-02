@@ -155,6 +155,7 @@ When testing the responsiveness of the site a few bugs were found and corrected.
 * The user buttons for the game had a strange alignment on smaller screen sizes. To fix this I reduced the size of the images and removed the margin between them.
 * When I put the index.html into the validator, an extra closed div element was found. To solve this I removed the extra close div element.
 * When I put the javascript code in to the JSHINT a few errors where found where I had not put a semicolon. These have since been added and the code passes through the JSHINT without any significant issues.
+
 ### Unfixed Bugs
 
 * There are no unfixed bugs in this game.
@@ -162,6 +163,7 @@ When testing the responsiveness of the site a few bugs were found and corrected.
 ## Deployment
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
+
 In the GitHub repository, navigate to the Settings tab
 From the source section drop-down menu, select the Master Branch
 Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
@@ -174,11 +176,15 @@ The live link can be viewed here: https://steven-dawson18.github.io/Rock-Paper-S
 #### The photos used on the home and sign up page are from Google Images and linked to original site:
 Rock image - https://www.google.com/
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMQDCxJilPcL5L9-wHJTBAVjOB7J9z2EIfenDw7MY8Dg-BQXhVCRZfTerHjSBdaF0UBM&usqp=CAU
+
 Paper image - https://www.google.com/
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1S9zQk2q592O-oELT4Wz-Vk9r1a6nf-SeFvm7mS0HkeMhJ_X7_VROraqoYY3LlZpOL44&usqp=CAU
+
 Scissor image - https://www.clipartmax.com/png/middle/428-4288836_your-hand-hand-clipart-png-rock-paper-scissors.png
+
 Lizard image - https://www.google.com/
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2nKCD7M1dJ1NjbftErHvA-ZTkqAhv-Leyui9xlGPgijHHWRIHOdzzFt1pfJClMX6_p9g&usqp=CAU
+
 Spock image - https://www.google.com/
 https://w7.pngwing.com/pngs/522/764/png-transparent-lizard-spock-rock-paper-scissors-vulcan-salute-others-purple-blue-game-thumbnail.png
 
@@ -191,3 +197,5 @@ Javascript code was used from this tutorial as inspiration and adapted for use i
 * userButtons Function
 
 * game function
+
+Code to add an event listner for a keypress on the input was taken from the w3schools website - https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp

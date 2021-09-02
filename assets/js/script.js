@@ -1,3 +1,7 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+    onLoad = document.getElementById('fname').focus();
+    userInput();
+});
 onLoad = document.getElementById('fname').focus();
 
 let firstName = "friend";
@@ -18,7 +22,6 @@ let gameOptions = `
         <a id="video" href="https://www.youtube.com/watch?v=fqlDc2VICZ0" target="_blank" rel="noopener" aria-label="View video of rules (opens a new tab)">Rules Video</a>
     </div>
     <div id="rules">How to play
-        <img class="hide" id="rules-image" src="assets/images/rules.png" alt="rules image">
     </div>
 </div>
     <p id="user-options-message">Please select a game</p>
@@ -303,6 +306,8 @@ function resetGame() {
 
  function game(userChoice) {
     const computerChoice = getComputerChoice();
+    const userMoveButton = document.getElementById(userChoice);
+    userMoveButton.classList.toggle('user-color');
     switch (userChoice + computerChoice) {
         case 'rockscissors':
         case 'rocklizard':
@@ -377,5 +382,3 @@ function resetGame() {
         game('spock');
     });
 }
-
-userInput();

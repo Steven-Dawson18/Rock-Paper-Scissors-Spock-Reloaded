@@ -459,3 +459,11 @@ footer {
         font-size: 10px;
     }
 }
+
+.user-color {
+    border: 3px solid green;
+}
+
+.comp-color {
+    border: 3px solid red;
+}
