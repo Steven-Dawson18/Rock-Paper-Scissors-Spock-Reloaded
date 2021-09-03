@@ -333,10 +333,12 @@ footer {
     width: 120px;
 }
 
-#useer-choice-show {
-    border-radius: 50%;
+.user-color {
     border: 3px solid green;
-    box-shadow: 10px 10px 10px lightgreen;
+}
+
+.comp-color {
+    border: 3px solid red;
 }
 
 /*media queries*/
@@ -458,12 +460,4 @@ footer {
     .badge {
         font-size: 10px;
     }
-}
-
-.user-color {
-    border: 3px solid green;
-}
-
-.comp-color {
-    border: 3px solid red;
 }

@@ -27,33 +27,6 @@ This website is to provide users with a fun and interactive gaming experience. T
 6. As a user playing the game, I would like to know if I won or Lost on the game.
 7. As participant, I want to be able to follow the events on social media so I can keep up to date with the latest news and games.
 
-## Features
-* User interactivity by using the users name to respond.
-![User interactivity](assets/images/personal-response.png)
-By responding to the user using their name, the game has a personal feel to it, making you feel more involved in the experience. This is used throughout the game on the winner and loser page.
-
-* Scoring system which is easy to follow.
-![Scoring system](assets/images/scoreboard.png)
-The scoreboard is easy to understand with the labels stating which score is the users and the computers.
-
-* Explanation of the game rules.
-![Rules explanation](assets/images/rules-page.png)
-The rules are clearly explained on a seperate page which takes the user back to the options page once they are satisfied. The rules page explaines the rules of the game and the three game options to choose from.
-
-* Link to video explaining the game rules.
-![Rules Video](assets/images/rules-video.png)
-If the user requires a verbal explanation of the rules they can click on the link on the options page. This will open youtube in a new tab on the users device.
-![Rules Video](assets/images/rules-video-link.png)
-The video is an fun explanation of the rules from the characters from the popular tv show Big Bang Theory.
-
-* Ability to play against the computer.
-![User vs computer](assets/images/scoreboard.png)
-The user is pitted against the computer in this game of chance. For each turn the user makes the computer randomly takes its turn and the result is displayed to the user in the response statement above the scoreboard.
-
-* Game Over winner announcement.
-![Result of game](assets/images/win.png)
-When the selected game has run its course by either the user or computer reaching the winning score, the game will announce if the user has won or lost and display a mesasage with the final score. The useer will have three options at this point. To play the game again, go back to the options page to select a different game or end the game, taking the user to the start page where a new user can input their name and play.
-
 ## Wireframe Mock Ups
 
 * Here is wireframe mock up of the planned game site on a desktop:
@@ -68,10 +41,47 @@ When the selected game has run its course by either the user or computer reachin
 
 ![Mock Up Mobile](assets/images/rpsls-mobile.png)
 
+## Features
+* Home Page
+![Home Page](assets/images/home-page.png)
+When a user lands on the site they will first see the site title which will immediately make them aware as to what the site is about. They are then welcomed with an explanation of the site and directed to enter their name in order to play the game. The users name will be used when refferring to the user throughout the gameing experience. If the user does not enter a name they will be prompted to do so or they will not be able to proceed. There are also links to the social media sites for the site owners so users can keep upto date with any developments, news or information This appears on all pages of the site.
+
+* User interactivity by using the users name to respond.
+![User interactivity](assets/images/personal-response.png)
+By responding to the user using their name, the game has a personal feel to it, making you feel more involved in the experience. This is used throughout the game on the winner and loser page.
+
+* Options Page.
+![Options Page](assets/images/rules-video.png)
+Once the user has entered their name and pressed the play button they will arrive at the options page. Here they will be greeted with a personalised message. If they are not sure of the rules there are two options on this page. They can watch a youtube video by clicking on the link Rules Video, displayed in red and this will open the video in a new tab in their browser. Or they can click on the How to play link, also in red, which will take then to the Rules page. There are then three game option buttons, where the user can decide if they want a short game, medium game or long game. Once they select an option they will be taken to the game page.
+
+* Linked youtube video
+![Rules Video](assets/images/rules-video-link.png)
+The video is an fun explanation of the rules from the characters from the popular tv show Big Bang Theory.
+
+* Explanation of the game rules.
+![Rules explanation](assets/images/rules-page.png)
+The rules are clearly explained on a seperate page which takes the user back to the options page once they are satisfied. The rules page explaines the rules of the game and the three game options to choose from.
+
+* Game Page
+![Game Page](assets/images/game-page.png)
+Once the user lands on the game page they are able to see the play buttons, scoreboard and are encouraged to make a move by selecting either of the buttons. The user will then be alerted to tell them if they have won or lost the round. In the text below the game buttons, it will let the useer know their selection and the computers selection and call the winner. The game buttons will also display a green border for the users choice and a red border for the computers choice to make it more obvious when playing.
+
+* Ability to play against the computer.
+![User vs computer](assets/images/scoreboard.png)
+The user is pitted against the computer in this game of chance. For each turn the user makes the computer randomly takes its turn and the result is displayed to the user in the response statement above the scoreboard.
+
+* Scoring system which is easy to follow.
+![Scoring system](assets/images/scoreboard.png)
+The scoreboard is easy to understand with the labels stating which score is the users and the computers. After each round the score will change depending on the winner.
+
+* Game Over winner announcement.
+![Result of game](assets/images/win.png)
+When the selected game has run its course by either the user or computer reaching the winning score, the game will announce if the user has won or lost and display a mesasage with the final score. The user will have three options at this point. To play the game again, go back to the options page to select a different game or end the game, taking the user to the start page where a new user can input their name and play.
+
 ## Testing
 
 * During the testing process I have used the Google Chrome Developer Tools to view each aspect of the site in different widths to make sure that it is responsive to screen size change and also viewed on the different divices such as ipad, iphone 6 and iphone 6 plus to make sure that each element works as it should.
-* The project has also been published to GItHub Pages and viewed in different screen widths to check the responsiveness of the site and make sure all links work as they should. Below are the different testing processes I have put the site through:
+* The project has also been published to GitHub Pages and viewed in different screen widths to check the responsiveness of the site and make sure all links work as they should. Below are the different testing processes I have put the site through:
 
 
 ### Validatior Testing
