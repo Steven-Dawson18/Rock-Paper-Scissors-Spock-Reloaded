@@ -13,7 +13,6 @@ body {
 
 main {
     background-color: cornflowerblue;
-    /* height: 70vh; */
     padding:40px;
 }
 
@@ -333,6 +332,8 @@ footer {
     width: 120px;
 }
 
+/* Add color to user and computer choices */
+
 .user-color {
     border: 3px solid green;
 }
@@ -346,67 +347,67 @@ footer {
 /* For large to medium screens sizes from 840px wide and down */
 
 
-    @media screen and (max-width: 840px) {
-        #title {
-            font-size: 200%;
-        }
-    } 
+@media screen and (max-width: 840px) {
+    #title {
+        font-size: 200%;
+    }
+} 
 
-    /* For large to medium screens sizes from 700px wide and down */
+/* For large to medium screens sizes from 700px wide and down */
 
-    @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
-        /* opening page */
-        #intro {
-            font-size: 1rem;
-        }
+    /* opening page */
+    #intro {
+        font-size: 1rem;
+    }
 
-        label {
-            font-size: 1rem;
-        }
+    label {
+        font-size: 1rem;
+    }
 
-        #message {
-            font-size: 1rem;
-        }
+    #message {
+        font-size: 1rem;
+    }
 
-        /* game options page */
+    /* game options page */
 
-        #user-options-message {
-            font-size: 1rem;
-        }
+    #user-options-message {
+        font-size: 1rem;
+    }
 
-        #rules {
-            font-size: 1rem;
-        }
+    #rules {
+        font-size: 1rem;
+    }
 
-        #video {
-            font-size: 1rem;
-        }
+    #video {
+        font-size: 1rem;
+    }
 
-        /* game page */
+    /* game page */
 
-        .choice {
-            width: 60px;
-            height: 60px;
-            display: inline-block;
-        }
+    .choice {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+    }
 
-        .result p {
-            font-size: 1rem;
-        }
+    .result p {
+        font-size: 1rem;
+    }
 
-        #action-message {
-            font-size: 1rem;
-        }
+    #action-message {
+        font-size: 1rem;
+    }
 
-        /* win-lose message */
+    /* win-lose message */
 
-        #win-msg {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
+    #win-msg {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
 
-    } 
+} 
 
 /* For small to medium screens sizes from 640px wide and down */
 
